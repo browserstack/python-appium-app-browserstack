@@ -34,7 +34,7 @@ def existence_lambda(s):
     return result and len(result) > 0
 
 start_local()
-driver = webdriver.Remote("http://" + userName + ":" + accessKey + "@hub.browserstack.com/wd/hub", desired_caps)
+driver = webdriver.Remote("http://" + userName + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub", desired_caps)
 
 test_button = WebDriverWait(driver, 30).until(
     EC.element_to_be_clickable((MobileBy.ACCESSIBILITY_ID, "TestBrowserStackLocal"))

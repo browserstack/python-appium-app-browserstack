@@ -29,7 +29,7 @@ def stop_local():
     bs_local.stop()
 
 start_local()
-driver = webdriver.Remote("http://" + userName + ":" + accessKey + "@hub.browserstack.com/wd/hub", desired_caps)
+driver = webdriver.Remote("http://" + userName + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub", desired_caps)
 test_button = WebDriverWait(driver, 30).until(
     EC.element_to_be_clickable((MobileBy.ID, "com.example.android.basicnetworking:id/test_action"))
 )
