@@ -9,9 +9,7 @@ accessKey = "BROWSERSTACK_ACCESS_KEY"
 
 desired_caps = {
     "build": "Python iOS",
-    "realMobile": True,
     "device": "iPhone 7",
-    "automationName": "XCUITest",
     "app": "bs://<hashed app-id>"
 }
 
@@ -33,7 +31,7 @@ time.sleep(5)
 text_elements = driver.find_elements_by_xpath("//XCUIElementTypeStaticText")
 assert(len(text_elements) > 0)
 elements = filter(
-    lambda x: x.__contains__("not registered on WordPress.com"),
+    lambda x: x and x.__contains__("not registered on WordPress.com"),
     [x.text for x in text_elements]
 )
 assert(len(elements) > 0)
