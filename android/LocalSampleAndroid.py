@@ -11,7 +11,6 @@ accessKey = "BROWSERSTACK_ACCESS_KEY"
 desired_caps = {
     "build": "Python Android Local",
     "device": "Samsung Galaxy S7",
-    "realMobile": True,
     "browserstack.local": True,
     "app": "bs://<hashed app-id>"
 }

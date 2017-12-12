@@ -9,7 +9,6 @@ accessKey = "BROWSERSTACK_ACCESS_KEY"
 
 desired_caps = {
     "build": "Python Android",
-    "realMobile": True,
     "device": "Samsung Galaxy S7",
     "app": "bs://<hashed app-id>"
 }

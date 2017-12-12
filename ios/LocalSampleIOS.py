@@ -10,9 +10,7 @@ accessKey = "BROWSERSTACK_ACCESS_KEY"
 
 desired_caps = {
     "build": "Python iOS Local",
-    "realMobile": True,
     "device": "iPhone 7",
-    "automationName": "XCUITest",
     "browserstack.local": True,
     "app": "bs://<hashed app-id>"
 }
