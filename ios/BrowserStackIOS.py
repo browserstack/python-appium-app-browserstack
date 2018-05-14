@@ -15,24 +15,25 @@ desired_caps = {
 
 driver = webdriver.Remote("http://" + userName + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub", desired_caps)
 
-login_button = WebDriverWait(driver, 30).until(
-    EC.element_to_be_clickable((MobileBy.ACCESSIBILITY_ID, "Log In"))
+text_button = WebDriverWait(driver, 30).until(
+    EC.element_to_be_clickable((MobileBy.ACCESSIBILITY_ID, "Text Button"))
 )
-login_button.click()
+text_button.click()
 
-email_input = WebDriverWait(driver, 30).until(
-    EC.element_to_be_clickable((MobileBy.ACCESSIBILITY_ID, "Email address"))
+text_input = WebDriverWait(driver, 30).until(
+    EC.element_to_be_clickable((MobileBy.ACCESSIBILITY_ID, "Text Input"))
 )
-email_input.send_keys("hello@browserstack.com")
-
-driver.find_element_by_accessibility_id("Next").click()
+text_input.send_keys("hello@browserstack.com"+"\n")
+ 
 time.sleep(5)
 
-text_elements = driver.find_elements_by_xpath("//XCUIElementTypeStaticText")
-assert(len(text_elements) > 0)
-elements = filter(
-    lambda x: x and x.__contains__("not registered on WordPress.com"),
-    [x.text for x in text_elements]
+text_output = WebDriverWait(driver, 30).until(
+    EC.element_to_be_clickable((MobileBy.ACCESSIBILITY_ID, "Text Output"))
 )
-assert(len(elements) > 0)
+
+if text_output!=None and text_output.text=="hello@browserstack.com":
+	assert True
+else:
+	assert False
+
 driver.quit()
