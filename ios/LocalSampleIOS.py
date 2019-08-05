@@ -9,7 +9,7 @@ userName = "BROWSERSTACK_USERNAME"
 accessKey = "BROWSERSTACK_ACCESS_KEY"
 
 desired_caps = {
-    "build": "Python iOS Local",
+    "build": "Python 3 iOS Local",
     "device": "iPhone 7",
     "browserstack.local": True,
     "app": "bs://<hashed app-id>"
@@ -46,8 +46,8 @@ result_string = result_element.text.lower()
 if result_string.__contains__("not working"):
     screenshot_file = "%s/screenshot.png" % os.getcwd()
     driver.save_screenshot(screenshot_file)
-    print "Screenshot stored at %s" % screenshot_file
-    print "Unexpected BrowserStackLocal test result"
+    print ("Screenshot stored at %s" % screenshot_file)
+    print ("Unexpected BrowserStackLocal test result")
 else:
     assert(result_string.__contains__("up and running"))
 
