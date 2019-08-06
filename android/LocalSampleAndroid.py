@@ -9,7 +9,7 @@ userName = "BROWSERSTACK_USERNAME"
 accessKey = "BROWSERSTACK_ACCESS_KEY"
 
 desired_caps = {
-    "build": "Python Android Local",
+    "build": "Python 3 Android Local",
     "device": "Samsung Galaxy S7",
     "browserstack.local": True,
     "app": "bs://<hashed app-id>"
@@ -47,7 +47,7 @@ if test_element is None:
     raise Exception("Cannot find the needed TextView element from app")
 
 matched_string = test_element.text
-print matched_string
+print (matched_string)
 assert(matched_string.__contains__("The active connection is wifi"))
 assert(matched_string.__contains__("Up and running"))
 

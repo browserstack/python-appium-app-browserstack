@@ -3,7 +3,7 @@
 For installing the required packages, use the following command
 
 ```
-$ pip install -r requirements.txt
+$ pip3 install -r requirements.txt
 ```
 
 ## Running your tests
@@ -16,8 +16,10 @@ $ pip install -r requirements.txt
   ```
 
 - If you do not have an .ipa file and looking to simply try App Automate, you can download our [sample app](https://www.browserstack.com/app-automate/sample-apps/ios/BStackSampleApp.ipa) and upload to the BrowserStack servers using the above API.
-- For LocalSample tests, you can use our [local sample app](https://www.browserstack.com/app-automate/sample-apps/ios/LocalSample.ipa).
 - Update the desired capability "app" with the App URL returned from the above API call
+- Run ```python3 BrowserStackIOS.py```
+- For LocalSample tests, you can use our [local sample app](https://www.browserstack.com/app-automate/sample-apps/ios/LocalSample.ipa).
+- Run  ```python3 LocalSampleIOS.py``` for local testing
 
 ## Notes
 * You can view your test results on the [BrowserStack App Automate dashboard](https://www.browserstack.com/app-automate)
@@ -27,3 +29,6 @@ For frameworks integration with BrowserStack, refer to their individual reposito
 
 - [Lettuce](https://github.com/browserstack/lettuce-appium-app-browserstack)
 - [Behave](https://github.com/browserstack/behave-appium-app-browserstack)
+
+For python 2 support refer the branch
+- [python-2-master](https://github.com/browserstack/python-appium-app-browserstack/tree/python-2-master)

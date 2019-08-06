@@ -3,7 +3,7 @@
 For installing the required packages, use the following command
 
 ```
-$ pip install -r requirements.txt
+$ pip3 install -r requirements.txt
 ```
 
 ## Running your tests
@@ -16,7 +16,9 @@ $ pip install -r requirements.txt
   ```
 
 - If you do not have an .apk file and looking to simply try App Automate, you can download our [sample app](https://www.browserstack.com/app-automate/sample-apps/android/WikipediaSample.apk) and upload to the BrowserStack servers using the above API.
+- Run ```python3 BrowserStackAndroid.py```
 - For LocalSample tests, you can use our [local sample app](https://www.browserstack.com/app-automate/sample-apps/android/LocalSample.apk).
+- Run ```python3 LocalSampleAndroid.py```
 - Update the desired capability "app" with the App URL returned from the above API call
 
 ## Notes
@@ -27,3 +29,6 @@ For frameworks integration with BrowserStack, refer to their individual reposito
 
 - [Lettuce](https://github.com/browserstack/lettuce-appium-app-browserstack)
 - [Behave](https://github.com/browserstack/behave-appium-app-browserstack)
+
+For python 2 support refer the branch
+- [python-2-master](https://github.com/browserstack/python-appium-app-browserstack/tree/python-2-master)

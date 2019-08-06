@@ -8,7 +8,7 @@ userName = "BROWSERSTACK_USERNAME"
 accessKey = "BROWSERSTACK_ACCESS_KEY"
 
 desired_caps = {
-    "build": "Python Android",
+    "build": "Python 3 Android",
     "device": "Samsung Galaxy S7",
     "app": "bs://<hashed app-id>"
 }
