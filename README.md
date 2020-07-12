@@ -19,7 +19,7 @@ Refer  [Getting Started using Appium with Python](https://www.browserstack.com/a
 2. pip
 
     - If pip is not installed, follow these instructions:
-        - Securely download get-pip.py by following this link: get-pip.py or use following curl command:
+        - Securely download get-pip.py by following this link: [get-pip.py](https://bootstrap.pypa.io/get-pip.py) or use following curl command:
 
         ```sh
         curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
@@ -59,7 +59,7 @@ Getting Started with Python Appium tests on real BrowserStack devices couldn't b
 
     - Open file android/BrowserStackAndroid.py to run android tests or ios/BrowserStackIOS.py to run iOS tests
 
-    - Update BrowserStack credentials - userName & accessKey (Find  your BrowserStack credentials [here](https://www.browserstack.com/accounts/settings))
+    - Update BrowserStack credentials - userName & accessKey (Find your BrowserStack credentials [here](https://www.browserstack.com/accounts/settings))
 
     - Update the desired_caps "app" capability with app_url (bs://\<hashed-app-id>) received in upload app API response
 
@@ -91,7 +91,7 @@ Getting Started with Python Appium tests on real BrowserStack devices couldn't b
 
     - Open file android/LocalSampleAndroid.py for android tests or ios/LocalSampleIOS.py for iOS tests
 
-    - Update BrowserStack credentials - userName & accessKey (Find  your BrowserStack credentials [here](https://www.browserstack.com/accounts/settings))
+    - Update BrowserStack credentials - userName & accessKey (Find your BrowserStack credentials [here](https://www.browserstack.com/accounts/settings))
 
     - Update the desired_caps "app" capability with app_url (bs://\<hashed-app-id>) received in upload app API response
 
