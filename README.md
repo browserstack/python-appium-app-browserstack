@@ -1,6 +1,6 @@
 # python-appium-app-browserstack
 
-This repository provides sample code to run tests using Appium with Python on BrowserStack’s real device cloud. It includes code required to integrate with BrowserStack cloud and tests written for BrowserStack’s sample Android and iOS apps.
+This repository demonstrates how to run Appium Python mobile app tests on BrowserStack's real device cloud.
 
 ## Documentation
 
@@ -31,10 +31,10 @@ Refer  [Getting Started using Appium with Python](https://www.browserstack.com/a
 
 ### Dependencies
 
-- Depending on your use case, switch to android/ or ios/ folder and run -
+- Depending on whether you are running android or iOS tests, run :
 
 ```sh
-pip install -r requirements.txt
+pip install -r android/requirements.txt or pip install -r ios/requirements.txt
 ```
 
 ## Getting Started
@@ -45,7 +45,7 @@ Getting Started with Python Appium tests on real BrowserStack devices couldn't b
 
 1. #### Upload App
 
-    - Upload your android app apk or iOS app ipa file, or Upload one of the Browserstack’s sample app [WikipediaSampleAndroidApp](https://www.browserstack.com/app-automate/sample-apps/android/WikipediaSample.apk) | [BStackSampleiOSApp](https://www.browserstack.com/app-automate/sample-apps/ios/BStackSampleApp.ipa)
+    - Upload your android app apk or iOS app ipa file, or upload one of the Browserstack’s sample app [WikipediaSampleAndroidApp](https://www.browserstack.com/app-automate/sample-apps/android/WikipediaSample.apk) | [BStackSampleiOSApp](https://www.browserstack.com/app-automate/sample-apps/ios/BStackSampleApp.ipa)
 
         Note: Update username and accesskey with BrowserStack credentials (Find your BrowserStack credentials [here](https://www.browserstack.com/accounts/settings))
 
@@ -73,11 +73,11 @@ Getting Started with Python Appium tests on real BrowserStack devices couldn't b
 
 3. #### Thats it! view your tests results on [BrowserStack App Automate dashboard](https://app-automate.browserstack.com/)
 
-### **Try BrowserStack Local Testing to test your apps deployed on  development or testing environment**
+### **Try BrowserStack Local Testing to test apps deployed on  development or testing environment**
 
 1. #### Upload app
 
-    - Upload your android app apk or iOS app ipa file, or Upload one of the Browserstack’s sample app [LocalAndroidSample.apk](https://www.browserstack.com/app-automate/sample-apps/android/LocalSample.apk) | [LocaliOSSample.ipa](https://www.browserstack.com/app-automate/sample-apps/ios/LocalSample.ipa)
+    - Upload your android app apk or iOS app ipa file, or upload one of the Browserstack’s sample app [LocalAndroidSample.apk](https://www.browserstack.com/app-automate/sample-apps/android/LocalSample.apk) | [LocaliOSSample.ipa](https://www.browserstack.com/app-automate/sample-apps/ios/LocalSample.ipa)
 
         Note: Update your BrowserStack credentials - username and accesskey (Find your BrowserStack credentials [here](https://www.browserstack.com/accounts/settings))
 
