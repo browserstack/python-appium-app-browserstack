@@ -73,6 +73,8 @@ Getting Started with Python Appium tests on real BrowserStack devices couldn't b
 
 3. #### Thats it! view your tests results on [BrowserStack App Automate dashboard](https://app-automate.browserstack.com/)
 
+    Note: If you face any issues, refer [Getting Help section](#Getting-Help)
+
 ### **Try BrowserStack Local Testing to test apps deployed on  development or testing environment**
 
 1. #### Upload app
@@ -104,6 +106,8 @@ Getting Started with Python Appium tests on real BrowserStack devices couldn't b
     ```
 
 3. #### Thats it! View your tests results on [BrowserStack App Automate dashboard](https://app-automate.browserstack.com/)
+
+    Note: If you face any issues, refer [Getting Help section](#Getting-Help)
 
 ## Integration with other python frameworks
 
