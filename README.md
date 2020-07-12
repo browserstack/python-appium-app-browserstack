@@ -1,6 +1,6 @@
 # python-appium-app-browserstack
 
-python-appium-app-browserstack provides sample code to run tests using Appium with Python on BrowserStack’s real device cloud. It includes code required to integrate with BrowserStack cloud and tests for BrowserStack’s sample Android and iOS app.
+This repository provides sample code to run tests using Appium with Python on BrowserStack’s real device cloud. It includes code required to integrate with BrowserStack cloud and tests written for BrowserStack’s sample Android and iOS apps.
 
 ## Documentation
 
@@ -57,13 +57,13 @@ Getting Started with Python Appium tests on real BrowserStack devices couldn't b
 
 2. #### Configure and run tests
 
-    - Open file android/BrowserStackAndroid.py for android tests or ios/BrowserStackIOS.py for iOS tests
+    - Open file android/BrowserStackAndroid.py to run android tests or ios/BrowserStackIOS.py to run iOS tests
 
-    - Update BrowserStack credentials - userName & accessKey (Find  your BrowserStack credentials [here](https://www.browserstack.com/accounts/settings)
+    - Update BrowserStack credentials - userName & accessKey (Find  your BrowserStack credentials [here](https://www.browserstack.com/accounts/settings))
 
     - Update the desired_caps "app" capability with app_url (bs://\<hashed-app-id>) received in upload app API response
 
-    - If you have uploaded your app instead of sample app, update the tests in the file accordingly
+    - If you have uploaded your app instead of BrowserStack sample app, update the tests accordingly
 
     - Run tests with following command
 
@@ -91,7 +91,7 @@ Getting Started with Python Appium tests on real BrowserStack devices couldn't b
 
     - Open file android/LocalSampleAndroid.py for android tests or ios/LocalSampleIOS.py for iOS tests
 
-    - Update BrowserStack credentials - userName & accessKey (Find  your BrowserStack credentials) [here](https://www.browserstack.com/accounts/settings)
+    - Update BrowserStack credentials - userName & accessKey (Find  your BrowserStack credentials [here](https://www.browserstack.com/accounts/settings))
 
     - Update the desired_caps "app" capability with app_url (bs://\<hashed-app-id>) received in upload app API response
 
