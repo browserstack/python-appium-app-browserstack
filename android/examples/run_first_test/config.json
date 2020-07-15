@@ -1,0 +1,13 @@
+{
+    "username":"BROWSERSTACK_USERNAME",
+    "access_key":"BROWSERSTACK_ACCESS_KEY",
+
+    "capabilities": {
+        "project": "First Python Android Project",
+        "build": "Python 3 Android",
+        "name": "single_test",
+        "browserstack.debug": true,
+        "app": "bs://d318ec55142bf92b1fec9fce6904109294db6678",
+        "device": "Google Pixel"
+    }
+}

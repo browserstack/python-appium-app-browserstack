@@ -1,0 +1,19 @@
+{
+    "username":"BROWSERSTACK_USERNAME",
+    "access_key":"BROWSERSTACK_ACCESS_KEY",
+
+    "capabilities": {
+        "project": "First Python iOS Project",
+        "build": "Python 3 iOS Parallel",
+        "name": "parallel_test",
+        "browserstack.debug": true,
+        "app": "bs://1e5f65dc1f0ebe44d78594f075324908e191f620"
+    },
+
+    "environments": [{
+        "device": "iPhone 7"
+      }, {
+        "device": "iPhone 7 Plus"
+    }]
+
+}

@@ -1,0 +1,26 @@
+{
+    "username":"BROWSERSTACK_USERNAME",
+    "access_key":"BROWSERSTACK_ACCESS_KEY",
+
+    "capabilities": {
+        "project": "First Python Android Project",
+        "build": "Python 3 Android Parallel",
+        "name": "parallel_test",
+        "browserstack.debug": true,
+        "app": "bs://d318ec55142bf92b1fec9fce6904109294db6678"
+    },
+
+    "environments": [{
+        "device": "Samsung Galaxy S8"
+      },
+      {
+        "device": "Samsung Galaxy S7"
+      },
+      {
+        "device": "Google Nexus 5"
+      },
+      {
+        "device": "Google Pixel"
+      }]
+
+}

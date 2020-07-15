@@ -1,0 +1,14 @@
+{
+    "username":"BROWSERSTACK_USERNAME",
+    "access_key":"BROWSERSTACK_ACCESS_KEY",
+
+    "capabilities": {
+        "project": "First Python Android Project",
+        "build": "Python 3 Android Local",
+        "name": "local_test",
+        "browserstack.debug": true,
+        "app": "bs://2628effb9a083f98a66db866cb4dbd2ee0311cbc",
+        "device": "Samsung Galaxy S7",
+        "browserstack.local": true
+    }
+}

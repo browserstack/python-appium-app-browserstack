@@ -1,0 +1,14 @@
+{
+    "username":"BROWSERSTACK_USERNAME",
+    "access_key":"BROWSERSTACK_ACCESS_KEY",
+
+    "capabilities": {
+        "project": "First Python iOS Project",
+        "build": "Python 3 iOS Local",
+        "name": "local_test",
+        "browserstack.debug": true,
+        "app": "bs://f88e466b82d604adffc3a065e483fabcb8ea9f38",
+        "device": "iPhone 7",
+        "browserstack.local": true
+    }
+}
