@@ -5,7 +5,7 @@
     "capabilities": {
         "project": "First Python iOS Project",
         "build": "Python 3 iOS",
-        "name": "single_test",
+        "name": "first_test",
         "browserstack.debug": true,
         "app": "bs://1e5f65dc1f0ebe44d78594f075324908e191f620",
         "device": "iPhone 7"
