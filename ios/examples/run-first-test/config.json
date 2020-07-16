@@ -4,16 +4,10 @@
 
     "capabilities": {
         "project": "First Python iOS Project",
-        "build": "Python 3 iOS Parallel",
-        "name": "parallel_test",
+        "build": "Python 3 iOS",
+        "name": "single_test",
         "browserstack.debug": true,
-        "app": "bs://<hashed app-id>"
-    },
-
-    "environments": [{
+        "app": "bs://1e5f65dc1f0ebe44d78594f075324908e191f620",
         "device": "iPhone 7"
-      }, {
-        "device": "iPhone 7 Plus"
-    }]
-
+    }
 }

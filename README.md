@@ -1,21 +1,21 @@
 # python-appium-app-browserstack
 
-This repository demonstrates how to run Appium Python mobile app tests on BrowserStack's real device cloud.
+This repository demonstrates how to run Appium tests using Python on BrowserStack App Automate.
 
-## Installation
+## Setup
 
 ### Requirements
 
-1. Python 3.7+ or Python 2.7+ (refer [python-2-master branch](https://github.com/browserstack/python-appium-app-browserstack/tree/python-2-master))
+1. Python 3.7+ or Python 2.7+
 
     - If Python is not installed, follow these instructions:
-        - For Windows, download latest python version from [here](https://www.python.org/downloads/windows/) and run the installer exe
-        - For Mac and Linux, run python --version to see what python version is pre-installed. If you want updated version download from [here](https://www.python.org/downloads/)
+        - For Windows, download latest python version from [here](https://www.python.org/downloads/windows/) and run the installer executable
+        - For Mac and Linux, run `python --version` to see what python version is pre-installed. If you want a different version download from [here](https://www.python.org/downloads/)
 
-2. Pip
+2. Package Manager `pip`
 
-    - If pip is not installed, follow these instructions:
-        - Securely download get-pip.py by following this link: [get-pip.py](https://bootstrap.pypa.io/get-pip.py) or use following curl command:
+    - If `pip` is not installed, follow these instructions:
+        - Securely download get-pip.py by following this link: [get-pip.py](https://bootstrap.pypa.io/get-pip.py) or use following cURL command to download it:
 
         ```sh
         curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
@@ -24,15 +24,17 @@ This repository demonstrates how to run Appium Python mobile app tests on Browse
         - After dowloading, run the file :
 
         ```sh
-        python get-pip.py
+        python3(or python) get-pip.py
         ```
 
-### Dependencies
+        Note : `pip` comes installed with Python 2.7.9+ and python 3.4+
 
-- Depending on whether you are running android or iOS tests, run :
+### Install the dependencies
+
+Depending on whether you are running Android or iOS tests, run :
 
 ```sh
-pip install -r android/requirements.txt or pip install -r ios/requirements.txt
+pip3(or pip) install -r android/requirements.txt or pip install -r ios/requirements.txt
 ```
 
 ## Getting Started
@@ -41,23 +43,23 @@ Getting Started with Appium tests in Python on real BrowserStack devices couldn'
 
 ### **Run first test :**
 
-- Switch to 'run_first_test' directory under [android examples](android/examples/run_first_test) or [ios examples](ios/examples/run_first_test)
+- Switch to `run-first-test` directory under [Android examples](android/examples/run-first-test) or [iOS examples](ios/examples/run-first-test)
 
 - Follow the steps outlined in the documentation [Getting Started with Appium in Python](https://www.browserstack.com/app-automate/appium-python)
 
 ### **Speed up test execution with parallel testing :**
 
-- Switch to 'run_prarallel_tests' directory under [android examples](android/examples/run_parallel_tests) or [ios examples](ios/examples/run_parallel_tests)
+- Switch to `run-prarallel-tests` directory under [Android examples](android/examples/run-parallel-tests) or [iOS examples](ios/examples/run-parallel-tests)
 
 - Follow the steps outlined in the documentation [Getting Started with Appium in Python](https://www.browserstack.com/app-automate/appium-python)
 
-### **Run Local tests for apps deployed in your development or testing environment :**
+### **Use Local testing for apps that access resources hosted in development or testing environments :**
 
-- Switch to 'run_local_test' directory under [android examples](android/examples/run_local_test) or [ios examples](ios/examples/run_local_test)
+- Switch to `run-local-test` directory under [Android examples](android/examples/run-local-test) or [iOS examples](ios/examples/run-local-test)
 
 - Follow the steps outlined in the documentation [Getting Started with Appium in Python](https://www.browserstack.com/app-automate/appium-python)
 
-**Note**: If you face any issues, refer [Getting Help](#Getting-Help)
+**Note**: If you face any issues, refer [Getting Help section](#Getting-Help)
 
 ## Integration with other python frameworks
 

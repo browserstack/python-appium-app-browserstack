@@ -1,3 +1,5 @@
-Appium-Python-Client
+Appium-Python-Client==0.52;python_version < '3.0'
+Appium-Python-Client;python_version >= '3.0'
 browserstack-local
 selenium
+
