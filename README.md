@@ -37,6 +37,8 @@ To install the dependencies for Android tests, run :
 pip3(or pip) install -r android/requirements.txt
 ```
 
+Or,
+
 To install the dependencies for iOS tests, run :
 
 ```sh
