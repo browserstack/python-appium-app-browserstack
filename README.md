@@ -53,19 +53,19 @@ Getting Started with Appium tests in Python on real BrowserStack devices couldn'
 
 - Switch to `run-first-test` directory under [Android examples](android/examples/run-first-test) or [iOS examples](ios/examples/run-first-test)
 
-- Follow the steps outlined in the documentation [Getting Started with Appium in Python](https://www.browserstack.com/app-automate/appium-python)
+- Follow the steps outlined in the documentation [Getting Started with your first test on App Automate](https://www.browserstack.com/docs/app-automate/appium/getting-started/python)
 
 ### **Speed up test execution with parallel testing :**
 
 - Switch to `run-prarallel-tests` directory under [Android examples](android/examples/run-parallel-tests) or [iOS examples](ios/examples/run-parallel-tests)
 
-- Follow the steps outlined in the documentation [Getting Started with Appium in Python](https://www.browserstack.com/app-automate/appium-python)
+- Follow the steps outlined in the documentation [Getting Started with Parallel testing on App Automate](https://www.browserstack.com/docs/app-automate/appium/getting-started/python/parallelize-tests)
 
 ### **Use Local testing for apps that access resources hosted in development or testing environments :**
 
 - Switch to `run-local-test` directory under [Android examples](android/examples/run-local-test) or [iOS examples](ios/examples/run-local-test)
 
-- Follow the steps outlined in the documentation [Getting Started with Appium in Python](https://www.browserstack.com/app-automate/appium-python)
+- Follow the steps outlined in the documentation [Getting Started with Local testing on App Automate](https://www.browserstack.com/docs/app-automate/appium/getting-started/python/local-testing)
 
 **Note**: If you face any issues, refer [Getting Help section](#Getting-Help)
 
