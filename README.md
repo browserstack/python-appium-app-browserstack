@@ -6,7 +6,7 @@ This repository demonstrates how to run Appium tests using Python on BrowserStac
 
 ### Requirements
 
-1. Python 3.7+ or Python 2.7+
+1. Python 3.6+ or Python 2.7+
 
     - If Python is not installed, follow these instructions:
         - For Windows, download latest python version from [here](https://www.python.org/downloads/windows/) and run the installer executable
