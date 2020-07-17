@@ -6,7 +6,7 @@ import time
 import os, json
 
 config_file_path = os.path.join(os.path.dirname(__file__), "config.json")
-print("Config file = %s" % (config_file_path))
+print("Config file path= %s" % (config_file_path))
 with open(config_file_path) as config_file:
     CONFIG = json.load(config_file)
 

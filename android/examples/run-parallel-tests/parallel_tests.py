@@ -7,7 +7,7 @@ import os, json, threading
 
 
 config_file_path = os.path.join(os.path.dirname(__file__), "config.json")
-print("Config file = %s" % (config_file_path))
+print("Config file path = %s" % (config_file_path))
 with open(config_file_path) as config_file:
     CONFIG = json.load(config_file)
 
@@ -22,10 +22,9 @@ def test(device_index):
 
     desired_capabilities = CONFIG['capabilities']
     desired_capabilities['device'] = CONFIG['environments'][device_index]['device']
-
-
+    
     driver = webdriver.Remote(
-    desired_capabilities = desired_capabilities,
+    desired_capabilities = dict(desired_capabilities),
     command_executor = "http://%s:%s@hub-cloud.browserstack.com/wd/hub" % (BROWSERSTACK_USERNAME, BROWSERSTACK_ACCESS_KEY)
     )
 
@@ -56,3 +55,6 @@ if __name__ == "__main__":
         p = threading.Thread(target=test,args=(i,))
         jobs.append(p)
         p.start()
+
+    for thread in jobs:
+        thread.join()

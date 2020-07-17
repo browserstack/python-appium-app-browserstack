@@ -1,10 +1,10 @@
 {
-    "username":"BROWSERSTACK_USERNAME",
-    "access_key":"BROWSERSTACK_ACCESS_KEY",
+    "username":"neerajkumar42",
+    "access_key":"MXmmyxNzZTYmXyyA8xyB",
 
     "capabilities": {
         "project": "First Python Android Project",
-        "build": "Python 3 Android Parallel",
+        "build": "Python Android Parallel",
         "name": "parallel_test",
         "browserstack.debug": true,
         "app": "bs://d318ec55142bf92b1fec9fce6904109294db6678"
