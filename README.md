@@ -31,10 +31,16 @@ This repository demonstrates how to run Appium tests using Python on BrowserStac
 
 ### Install the dependencies
 
-Depending on whether you are running Android or iOS tests, run :
+To install the dependencies for Android tests, run :
 
 ```sh
-pip3(or pip) install -r android/requirements.txt or pip install -r ios/requirements.txt
+pip3(or pip) install -r android/requirements.txt
+```
+
+To install the dependencies for iOS tests, run :
+
+```sh
+pip3(or pip) install -r ios/requirements.txt
 ```
 
 ## Getting Started
