@@ -14,6 +14,8 @@ This repository demonstrates how to run Appium tests using Python on BrowserStac
 
 2. Package Manager `pip`
 
+    Note : `pip` comes installed with Python 2.7.9+ and python 3.4+
+
     - If `pip` is not installed, follow these instructions:
         - Securely download get-pip.py by following this link: [get-pip.py](https://bootstrap.pypa.io/get-pip.py) or use following cURL command to download it:
 
@@ -26,8 +28,6 @@ This repository demonstrates how to run Appium tests using Python on BrowserStac
         ```sh
         python3(or python) get-pip.py
         ```
-
-        Note : `pip` comes installed with Python 2.7.9+ and python 3.4+
 
 ### Install the dependencies
 
