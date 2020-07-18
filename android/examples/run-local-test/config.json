@@ -7,7 +7,7 @@
         "build": "Python Android Local",
         "name": "local_test",
         "browserstack.debug": true,
-        "app": "bs://2628effb9a083f98a66db866cb4dbd2ee0311cbc",
+        "app": "bs://<hashed app-id>",
         "device": "Samsung Galaxy S7",
         "browserstack.local": true
     }

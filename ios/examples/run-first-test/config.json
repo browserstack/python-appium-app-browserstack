@@ -7,7 +7,7 @@
         "build": "Python iOS",
         "name": "first_test",
         "browserstack.debug": true,
-        "app": "bs://a2c4c0bd114ce9765af0988a632982cb42688b81",
+        "app": "bs://<hashed app-id>",
         "device": "iPhone 7"
     }
 }

@@ -7,7 +7,7 @@
         "build": "Python Android",
         "name": "first_test",
         "browserstack.debug": true,
-        "app": "bs://d318ec55142bf92b1fec9fce6904109294db6678",
+        "app": "bs://<hashed app-id>",
         "device": "Google Pixel"
     }
 }

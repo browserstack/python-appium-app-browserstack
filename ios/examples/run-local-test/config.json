@@ -7,7 +7,7 @@
         "build": "Python iOS Local",
         "name": "local_test",
         "browserstack.debug": true,
-        "app": "bs://f88e466b82d604adffc3a065e483fabcb8ea9f38",
+        "app": "bs://<hashed app-id>",
         "device": "iPhone 7",
         "browserstack.local": true
     }
