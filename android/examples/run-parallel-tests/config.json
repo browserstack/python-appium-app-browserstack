@@ -1,6 +1,6 @@
 {
-    "username":"neerajkumar42",
-    "access_key":"MXmmyxNzZTYmXyyA8xyB",
+    "username":"BROWSERSTACK_USERNAME",
+    "access_key":"BROWSERSTACK_ACCESS_KEY",
 
     "capabilities": {
         "project": "First Python Android Project",
