@@ -1,4 +1,5 @@
 {
+    "server": "hub-cloud.browserstack.com",
     "username":"BROWSERSTACK_USERNAME",
     "access_key":"BROWSERSTACK_ACCESS_KEY",
 
@@ -7,7 +8,8 @@
         "build": "Python Android",
         "name": "first_test",
         "browserstack.debug": true,
-        "app": "bs://<hashed app-id>",
-        "device": "Google Pixel"
+        "app": "bs://d318ec55142bf92b1fec9fce6904109294db6678",
+        "device": "Google Pixel 3",
+        "os_version": "9.0"
     }
 }

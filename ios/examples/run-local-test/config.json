@@ -8,7 +8,8 @@
         "name": "local_test",
         "browserstack.debug": true,
         "app": "bs://<hashed app-id>",
-        "device": "iPhone 7",
+        "device": "iPhone 11 Pro",
+        "os_version": "13",
         "browserstack.local": true
     }
 }

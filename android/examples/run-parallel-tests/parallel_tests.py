@@ -7,7 +7,7 @@ import os, json, threading
 
 
 config_file_path = os.path.join(os.path.dirname(__file__), "config.json")
-print("Config file path: %s" % (config_file_path))
+print("Path to the config file: %s" % (config_file_path))
 with open(config_file_path) as config_file:
     CONFIG = json.load(config_file)
 
@@ -51,10 +51,11 @@ def test(device_index):
 
 if __name__ == "__main__":
     jobs = []
-    for i in range(4):
-        p = threading.Thread(target=test,args=(i,))
-        jobs.append(p)
-        p.start()
+    for index in range(2):
+        thread = threading.Thread(target=test,args=(index,))
+        jobs.append(thread)
+        thread.start()
 
     for thread in jobs:
         thread.join()
+

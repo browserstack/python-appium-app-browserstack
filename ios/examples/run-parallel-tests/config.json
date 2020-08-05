@@ -11,9 +11,10 @@
     },
 
     "environments": [{
-        "device": "iPhone 7"
+        "device": "iPhone 11 Pro",
+        "os_version": "13"
       }, {
-        "device": "iPhone 7 Plus"
+        "device": "iPhone 11 Pro Max",
+        "os_version": "13"
     }]
-
 }
