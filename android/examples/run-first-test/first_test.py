@@ -36,7 +36,7 @@ def test():
     EC.element_to_be_clickable((MobileBy.ID, "org.wikipedia.alpha:id/search_src_text"))
     )
 
-    search_input.send_keys("BrowserStack")
+    search_input.send_keys("BrowserStack" + "\n")
 
     time.sleep(5)
 
