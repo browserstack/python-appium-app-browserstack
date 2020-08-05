@@ -25,7 +25,7 @@ def test(device_index):
     
     driver = webdriver.Remote(
     desired_capabilities = dict(desired_capabilities),
-    command_executor = "http://%s:%s@hub-cloud.browserstack.com/wd/hub" % (BROWSERSTACK_USERNAME, BROWSERSTACK_ACCESS_KEY)
+    command_executor = "http://%s:%s@%s/wd/hub" % (BROWSERSTACK_USERNAME, BROWSERSTACK_ACCESS_KEY, CONFIG['server'])
     )
 
     search_element = WebDriverWait(driver, 30).until (
@@ -37,8 +37,7 @@ def test(device_index):
     search_input = WebDriverWait(driver, 30).until (
     EC.element_to_be_clickable((MobileBy.ID, "org.wikipedia.alpha:id/search_src_text"))
     )
-
-   search_input.send_keys("BrowserStack" + "\n")
+    search_input.send_keys("BrowserStack" + "\n")
 
     time.sleep(5)
 

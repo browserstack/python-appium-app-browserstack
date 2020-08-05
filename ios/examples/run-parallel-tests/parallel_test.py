@@ -26,7 +26,7 @@ def test(device_index):
 
     driver = webdriver.Remote(
     desired_capabilities = dict(desired_capabilities),
-    command_executor = "http://%s:%s@hub-cloud.browserstack.com/wd/hub" % (BROWSERSTACK_USERNAME, BROWSERSTACK_ACCESS_KEY)
+    command_executor = "http://%s:%s@%s/wd/hub" % (BROWSERSTACK_USERNAME, BROWSERSTACK_ACCESS_KEY, CONFIG['server'])
     )
 
     text_button = WebDriverWait(driver, 30).until(
