@@ -1,0 +1,16 @@
+{
+    "server": "hub-cloud.browserstack.com",
+    "username":"BROWSERSTACK_USERNAME",
+    "access_key":"BROWSERSTACK_ACCESS_KEY",
+
+    "capabilities": {
+        "project": "First Python iOS Project",
+        "build": "Python iOS Local",
+        "name": "local_test",
+        "browserstack.debug": true,
+        "app": "bs://<hashed app-id>",
+        "device": "iPhone 11 Pro",
+        "os_version": "13",
+        "browserstack.local": true
+    }
+}
