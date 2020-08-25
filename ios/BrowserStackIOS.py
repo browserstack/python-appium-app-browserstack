@@ -6,8 +6,11 @@ import time
 
 desired_caps = {
     # Set your access credentials
+    "browserstack.user" : "YOUR_USERNAME",
+    "browserstack.key" : "YOUR_ACCESS_KEY",
 
     # Set URL of the application under test
+    "app" : "bs://<app-id>",
 
     # Specify device and os_version for testing
     "device" : "iPhone 11 Pro",
