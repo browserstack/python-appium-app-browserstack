@@ -4,36 +4,48 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 
-userName = "BROWSERSTACK_USERNAME"
-accessKey = "BROWSERSTACK_ACCESS_KEY"
-
 desired_caps = {
-    "build": "Python 3 iOS",
-    "device": "iPhone 7",
-    "app": "bs://<hashed app-id>"
+    # Set your access credentials
+    "browserstack.user" : "YOUR_USERNAME",
+    "browserstack.key" : "YOUR_ACCESS_KEY",
+
+    # Set URL of the application under test
+    "app" : "bs://<app-id>",
+
+    # Specify device and os_version for testing
+    "device" : "iPhone 11 Pro",
+    "os_version" : "13",
+    
+    # Set other BrowserStack capabilities
+    "project" : "First Python project", 
+    "build" : "Python Android",
+    "name" : "first_test"
 }
 
-driver = webdriver.Remote("http://" + userName + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub", desired_caps)
+# Initialize the remote Webdriver using BrowserStack remote URL
+# and desired capabilities defined above
+driver = webdriver.Remote(
+    "http:/hub-cloud.browserstack.com/wd/hub", desired_caps
+)
 
+# Test case for the BrowserStack sample Android app. 
+# If you have uploaded your app, update the test case here. 
 text_button = WebDriverWait(driver, 30).until(
     EC.element_to_be_clickable((MobileBy.ACCESSIBILITY_ID, "Text Button"))
 )
 text_button.click()
-
 text_input = WebDriverWait(driver, 30).until(
     EC.element_to_be_clickable((MobileBy.ACCESSIBILITY_ID, "Text Input"))
 )
 text_input.send_keys("hello@browserstack.com"+"\n")
- 
 time.sleep(5)
-
 text_output = WebDriverWait(driver, 30).until(
     EC.element_to_be_clickable((MobileBy.ACCESSIBILITY_ID, "Text Output"))
 )
-
 if text_output!=None and text_output.text=="hello@browserstack.com":
 	assert True
 else:
 	assert False
 
+# Invoke driver.quit() after the test is done to indicate that the test is completed.
 driver.quit()
