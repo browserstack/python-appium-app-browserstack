@@ -6,11 +6,8 @@ import time
 
 desired_caps = {
     # Set your access credentials
-    "browserstack.user" : "YOUR_USERNAME",
-    "browserstack.key" : "YOUR_ACCESS_KEY",
 
     # Set URL of the application under test
-    "app" : "bs://<app-id>",
 
     # Specify device and os_version for testing
     "device" : "iPhone 11 Pro",
@@ -18,14 +15,15 @@ desired_caps = {
     
     # Set other BrowserStack capabilities
     "project" : "First Python project", 
-    "build" : "Python Android",
+    "build" : "Python iOS",
     "name" : "first_test"
 }
 
 # Initialize the remote Webdriver using BrowserStack remote URL
 # and desired capabilities defined above
 driver = webdriver.Remote(
-    "http:/hub-cloud.browserstack.com/wd/hub", desired_caps
+    command_executor="http://hub-cloud.browserstack.com/wd/hub", 
+    desired_capabilities=desired_caps
 )
 
 # Test case for the BrowserStack sample Android app. 
