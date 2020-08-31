@@ -100,6 +100,8 @@ Open `BrowserStackAndroid.py` file for Android or `BrowserStackIOS.py` for iOS
 
 - Run `python BrowserStackAndroid.py` or `python BrowserStackIOS.py`
 
+- You can access the test execution results, and debugging information such as video recording, network logs on [App Automate dashboard](https://app-automate.browserstack.com/dashboard)
+
 For more details, refer to our documentation - [Get Started with your first test on App Automate](https://www.browserstack.com/docs/app-automate/appium/getting-started/python)
 
 ### **Use Local testing for apps that access resources hosted in development or testing environments :**
