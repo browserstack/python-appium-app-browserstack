@@ -38,34 +38,18 @@ This repository demonstrates how to run Appium Python tests on BrowserStack App 
 
 ### Install the dependencies
 
-To install the dependencies for Android tests, run :
+To install the dependencies, run the following command in project's base directory:
 
 - For Python 3
 
     ```sh
-    pip3 install -r android/requirements.txt
+    pip3 install -r requirements.txt
     ```
 
 - For Python 2
 
     ```sh
-    pip2 install -r android/requirements.txt
-    ```
-
-Or,
-
-To install the dependencies for iOS tests, run :
-
-- For Python 3
-
-    ```sh
-    pip3 install -r ios/requirements.txt
-    ```
-
-- For Python 2
-
-    ```sh
-    pip2 install -r ios/requirements.txt
+    pip2 install -r requirements.txt
     ```
 
 ## Getting Started
@@ -88,7 +72,7 @@ Ensure that @ symbol is prepended to the file path in the above request. Please 
 
 ### **Run first test :**
 
-Open `BrowserStackAndroid.py` file for Android or `BrowserStackIOS.py` for iOS
+Open `BrowserStackAndroid.py` file for Android test or `BrowserStackIOS.py` for iOS test
 
 - Replace `YOUR_USERNAME` & `YOUR_ACCESS_KEY` with your BrowserStack access credentials
 
