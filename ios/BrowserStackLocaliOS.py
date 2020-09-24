@@ -14,16 +14,14 @@ desired_caps = {
     "browserstack.key" : accessKey,
 
     # Set URL of the application under test
-    "app" : "bs://<app-id>",
+    "app" : "<bs://app-id>",
 
     # Specify device and os_version for testing
     "device" : "iPhone 11 Pro",
     "os_version" : "13",
 
-    "build": "Python 3 iOS Local",
-    "device": "iPhone 7",
+    #Set BrowserStack Local capability as True
     "browserstack.local": True,
-    "app": "bs://<hashed app-id>",
 
      # Set other BrowserStack capabilities
     "project" : "First Python Local project", 

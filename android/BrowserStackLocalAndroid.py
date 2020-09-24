@@ -14,11 +14,14 @@ desired_caps = {
     "browserstack.key" : accessKey,
 
     # Set URL of the application under test
-    "app" : "bs://<app-id>",
+    "app" : "<bs://app-id>",
 
     # Specify device and os_version for testing
     "device" : "Google Pixel 3",
     "os_version" : "9.0",
+
+    #Set BrowserStack Local capability as True
+    "browserstack.local": True,
 
     # Set other BrowserStack capabilities
     "project" : "First Python Local project", 
