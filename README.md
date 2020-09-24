@@ -56,7 +56,7 @@ To install the dependencies, run the following command in project's base directo
 
 Getting Started with Appium tests in Python on BrowserStack couldn't be easier!
 
-### Run first test :
+### Run your first test :
 
 **1. Upoad your Android or iOS App**
 
@@ -86,6 +86,8 @@ Ensure that @ symbol is prepended to the file path in the above request. Please 
 - Run `python BrowserStackAndroid.py` or `python BrowserStackIOS.py`
 
 - You can access the test execution results, and debugging information such as video recording, network logs on [App Automate dashboard](https://app-automate.browserstack.com/dashboard)
+
+---
 
 ### **Use Local testing for apps that access resources hosted in development or testing environments :**
 
