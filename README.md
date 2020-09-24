@@ -93,7 +93,7 @@ Ensure that @ symbol is prepended to the file path in the above request. Please 
 
 **1. Upoad your Android or iOS App**
 
-Upload your Android app (.apk or .aab file) or iOS app (.ipa file) to BrowserStack servers using our REST API. Here is an example cURL request :
+Upload your Android app (.apk or .aab file) or iOS app (.ipa file) that access resources hosted on your internal or test environments to BrowserStack servers using our REST API. Here is an example cURL request :
 
 ```
 curl -u "YOUR_USERNAME:YOUR_ACCESS_KEY" \
