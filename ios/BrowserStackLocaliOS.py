@@ -5,9 +5,9 @@ from selenium.webdriver.support import expected_conditions as EC
 from browserstack.local import Local
 import os
 
-# Set your access credentials here
-userName = "BROWSERSTACK_USERNAME"
-accessKey = "BROWSERSTACK_ACCESS_KEY"
+# Set your BrowserStack access credentials here
+userName = "YOUR_USERNAME"
+accessKey = "YOUR_ACCESS_KEY"
 
 desired_caps = {
     "browserstack.user" : userName,
