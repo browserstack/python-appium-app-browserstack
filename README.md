@@ -58,7 +58,7 @@ Getting Started with Appium tests in Python on BrowserStack couldn't be easier!
 
 ### Run your first test :
 
-**1. Upoad your Android or iOS App**
+**1. Upload your Android or iOS App**
 
 Upload your Android app (.apk or .aab file) or iOS app (.ipa file) to BrowserStack servers using our REST API. Here is an example cURL request :
 
@@ -91,7 +91,7 @@ Ensure that @ symbol is prepended to the file path in the above request. Please 
 
 ### **Use Local testing for apps that access resources hosted in development or testing environments :**
 
-**1. Upoad your Android or iOS App**
+**1. Upload your Android or iOS App**
 
 Upload your Android app (.apk or .aab file) or iOS app (.ipa file) that access resources hosted on your internal or test environments to BrowserStack servers using our REST API. Here is an example cURL request :
 
