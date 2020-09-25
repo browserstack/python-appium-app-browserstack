@@ -110,7 +110,7 @@ Ensure that @ symbol is prepended to the file path in the above request. Please 
 
 **2. Configure and run your local test**
 
-Open `BrowserStackLocalAndroid.py` file for Android test or `BrowserStackLocaliOS.py` for iOS test
+Open `BrowserStackLocalAndroid.py` file for Android test or `BrowserStackLocaliOS.py` for iOS test :
 
 - Replace `YOUR_USERNAME` & `YOUR_ACCESS_KEY` with your BrowserStack access credentials
 
