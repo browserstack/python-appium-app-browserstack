@@ -75,7 +75,7 @@ Ensure that @ symbol is prepended to the file path in the above request. Please 
 
 **2. Configure and run your first test**
 
-Open `BrowserStackAndroid.py` file for Android test or `BrowserStackIOS.py` for iOS test :
+Open `browserstack_sample.py` file in `Android` or `iOS` folder :
 
 - Replace `YOUR_USERNAME` & `YOUR_ACCESS_KEY` with your BrowserStack access credentials
 
@@ -85,7 +85,7 @@ Open `BrowserStackAndroid.py` file for Android test or `BrowserStackIOS.py` for 
 
 - If you have uploaded your own app update the test case
 
-- Run `python BrowserStackAndroid.py` or `python BrowserStackIOS.py`
+- Run `python browserstack_sample.py`
 
 - You can access the test execution results, and debugging information such as video recording, network logs on [App Automate dashboard](https://app-automate.browserstack.com/dashboard)
 
@@ -110,7 +110,7 @@ Ensure that @ symbol is prepended to the file path in the above request. Please 
 
 **2. Configure and run your local test**
 
-Open `BrowserStackLocalAndroid.py` file for Android test or `BrowserStackLocaliOS.py` for iOS test :
+Open `browserstack_sample_local` file in `Android` or `iOS` folder :
 
 - Replace `YOUR_USERNAME` & `YOUR_ACCESS_KEY` with your BrowserStack access credentials
 
@@ -122,7 +122,7 @@ Open `BrowserStackLocalAndroid.py` file for Android test or `BrowserStackLocaliO
 
 - If you have uploaded your own app update the test case
 
-- Run `python BrowserStackLocalAndroid.py` or `python BrowserStackLocaliOS.py`
+- Run `python browserstack_sample_local.py`
 
 - You can access the test execution results, and debugging information such as video recording, network logs on [App Automate dashboard](https://app-automate.browserstack.com/dashboard)
 
