@@ -77,7 +77,7 @@ Ensure that @ symbol is prepended to the file path in the above request. Please 
 
 Open `browserstack_sample.py` file in `Android` or `iOS` folder :
 
-- Replace `YOUR_USERNAME` & `YOUR_ACCESS_KEY` with your BrowserStack access credentials
+- Replace `YOUR_USERNAME` & `YOUR_ACCESS_KEY` with your BrowserStack access credentials. Get your BrowserStack access credentials from [here](https://www.browserstack.com/accounts/settings)
 
 - Replace `bs://<app-id>` wkth the URL obtained from app upload step
 
@@ -112,7 +112,7 @@ Ensure that @ symbol is prepended to the file path in the above request. Please 
 
 Open `browserstack_sample_local` file in `Android` or `iOS` folder :
 
-- Replace `YOUR_USERNAME` & `YOUR_ACCESS_KEY` with your BrowserStack access credentials
+- Replace `YOUR_USERNAME` & `YOUR_ACCESS_KEY` with your BrowserStack access credentials. Get your BrowserStack access credentials from [here](https://www.browserstack.com/accounts/settings)
 
 - Replace `bs://<app-id>` wkth the URL obtained from app upload step
 
