@@ -4,7 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 
-desired_caps = {
+desired_cap = {
     # Set your access credentials
     "browserstack.user" : "YOUR_USERNAME",
     "browserstack.key" : "YOUR_ACCESS_KEY",
@@ -26,7 +26,7 @@ desired_caps = {
 # and desired capabilities defined above
 driver = webdriver.Remote(
     command_executor="http://hub-cloud.browserstack.com/wd/hub", 
-    desired_capabilities=desired_caps
+    desired_capabilities=desired_cap
 )
 
 # Test case for the BrowserStack sample Android app. 
