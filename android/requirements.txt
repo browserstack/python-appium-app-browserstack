@@ -1,3 +1,0 @@
-Appium-Python-Client
-browserstack-local
-selenium
