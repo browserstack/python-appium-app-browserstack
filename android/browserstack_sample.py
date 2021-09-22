@@ -18,7 +18,7 @@ desired_cap = {
     
     # Set other BrowserStack capabilities
     "project" : "First Python project", 
-    "build" : "Python Android",
+    "build" : "browserstack-build-1",
     "name" : "first_test"
 }
 
