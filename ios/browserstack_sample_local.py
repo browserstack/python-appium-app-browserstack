@@ -25,7 +25,7 @@ desired_caps = {
 
      # Set other BrowserStack capabilities
     "project" : "First Python Local project", 
-    "build" : "Python iOS Local",
+    "build" : "browserstack-build-1",
     "name" : "local_test"
 }
 
