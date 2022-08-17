@@ -5,21 +5,22 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 
 desired_cap = {
-    # Set your access credentials
-    "browserstack.user" : "YOUR_USERNAME",
-    "browserstack.key" : "YOUR_ACCESS_KEY",
-
     # Set URL of the application under test
     "app" : "bs://<app-id>",
 
     # Specify device and os_version for testing
-    "device" : "iPhone 11 Pro",
-    "os_version" : "13",
-    
+    "deviceName": "iPhone 11 Pro",
+    "platformName": "ios",
+    "platformVersion": "13",
+
     # Set other BrowserStack capabilities
-    "project" : "First Python project", 
-    "build" : "browserstack-build-1",
-    "name" : "first_test"
+    "bstack:options": {
+        "userName" : "YOUR_USERNAME",
+        "accessKey" : "YOUR_ACCESS_KEY",
+        "projectName" : "First Python project",
+        "buildName" : "browserstack-build-1",
+        "sessionName" : "first_test"
+    }
 }
 
 # Initialize the remote Webdriver using BrowserStack remote URL

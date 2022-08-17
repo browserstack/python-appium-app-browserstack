@@ -10,23 +10,28 @@ userName = "YOUR_USERNAME"
 accessKey = "YOUR_ACCESS_KEY"
 
 desired_caps = {
-    "browserstack.user" : userName,
-    "browserstack.key" : accessKey,
-
     # Set URL of the application under test
-    "app" : "<bs://app-id>",
+    "app" : "bs://<app-id>",
 
     # Specify device and os_version for testing
-    "device" : "Google Pixel 3",
-    "os_version" : "9.0",
-
-    #Set BrowserStack Local capability as True
-    "browserstack.local": True,
+    "deviceName": "Google Pixel 3",
+    "platformName": "android",
+    "platformVersion": "9.0",
 
     # Set other BrowserStack capabilities
     "project" : "First Python Local project", 
     "build" : "browserstack-build-1",
-    "name" : "local_test"
+    "name" : "local_test",
+
+    # Set other BrowserStack capabilities
+    "bstack:options": {
+        "userName" : userName,
+        "accessKey" : accessKey,
+        "projectName" : "First Python Local project",
+        "buildName" : "browserstack-build-1",
+        "sessionName" : "local_test",
+        "local" : True
+    }
 }
 
 bs_local = None
