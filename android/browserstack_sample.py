@@ -1,34 +1,37 @@
 from appium import webdriver
+from appium.options.android import UiAutomator2Options
 from appium.webdriver.common.mobileby import MobileBy
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 
-desired_cap = {
-    # Set URL of the application under test
-    "app" : "bs://<app-id>",
-
+# Options are only available since client version 2.3.0
+# If you use an older client then switch to desired_capabilities
+# instead: https://github.com/appium/python-client/pull/720
+options = UiAutomator2Options().load_capabilities({
     # Specify device and os_version for testing
-    "deviceName": "Google Pixel 3",
-    "platformName": "android",
-    "platformVersion": "9.0",
+    "platformName" : "android",
+    "platformVersion" : "9.0",
+    "deviceName" : "Google Pixel 3",
+
+    # Set URL of the application under test
+    "app" : "<bs://app-id>",
 
     # Set other BrowserStack capabilities
-    "bstack:options": {
-        "userName" : "YOUR_USERNAME",
-        "accessKey" : "YOUR_ACCESS_KEY",
+    'bstack:options' : {
         "projectName" : "First Python project",
         "buildName" : "browserstack-build-1",
-        "sessionName" : "first_test"
+        "sessionName" : "first_test",
+
+        # Set your access credentials
+        "userName" : "YOUR_USERNAME",
+        "accessKey" : "YOUR_ACCESS_KEY"
     }
-}
+})
 
 # Initialize the remote Webdriver using BrowserStack remote URL
 # and desired capabilities defined above
-driver = webdriver.Remote(
-    command_executor="http://hub-cloud.browserstack.com/wd/hub",
-    desired_capabilities=desired_cap
-)
+driver = webdriver.Remote("http://hub-cloud.browserstack.com/wd/hub", options=options)
 
 # Test case for the BrowserStack sample Android app.
 # If you have uploaded your app, update the test case here.
