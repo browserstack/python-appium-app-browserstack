@@ -28,7 +28,7 @@ options = XCUITestOptions().load_capabilities({
         "accessKey" : accessKey,
         "projectName" : "First Python Local project",
         "buildName" : "browserstack-build-1",
-        "sessionName" : "BStack first_test",
+        "sessionName" : "BStack local_test",
         "local" : "true"
     }
 })
@@ -54,7 +54,7 @@ start_local()
 
 # Initialize the remote Webdriver using BrowserStack remote URL
 # and options defined above
-driver = webdriver.Remote("http://hub-cloud.browserstack.com/wd/hub", options=options)
+driver = webdriver.Remote("http://hub.browserstack.com/wd/hub", options=options)
 
 # Test case for the BrowserStack sample iOS app. 
 # If you have uploaded your app, update the test case here. 

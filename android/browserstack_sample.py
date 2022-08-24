@@ -31,7 +31,7 @@ options = UiAutomator2Options().load_capabilities({
 
 # Initialize the remote Webdriver using BrowserStack remote URL
 # and options defined above
-driver = webdriver.Remote("http://hub-cloud.browserstack.com/wd/hub", options=options)
+driver = webdriver.Remote("http://hub.browserstack.com/wd/hub", options=options)
 
 # Test case for the BrowserStack sample Android app.
 # If you have uploaded your app, update the test case here.
