@@ -114,7 +114,7 @@ Open `browserstack_sample_local` file in `Android` or `iOS` folder :
 
 - Set the device and OS version
 
-- Ensure that `browserstack.local` capability is set to `true`. Within the test script, there is code snippet that automatically establishes Local Testing connection to BrowserStack servers using Python binding for BrowserStack Local.
+- Ensure that `local` capability is set to `true`. Within the test script, there is code snippet that automatically establishes Local Testing connection to BrowserStack servers using Python binding for BrowserStack Local.
 
 - If you have uploaded your own app update the test case
 
