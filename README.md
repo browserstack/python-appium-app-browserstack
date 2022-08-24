@@ -2,39 +2,43 @@
 
 This repository demonstrates how to run Appium Python tests on BrowserStack App Automate.
 
+## Based on
+
+These code samples are currently based on:
+
+- **Appium-Python-Client:** `2.6.1`
+- **Protocol:** `W3C`
+
 ## Setup
 
 ### Requirements
 
-1. Python 3.6+ or Python 2.7+
-    
-    - For Windows, download latest python version from [here](https://www.python.org/downloads/windows/) and run the installer executable
-    - For Mac and Linux, run `python --version` to see what python version is pre-installed. If you want a different version download from [here](https://www.python.org/downloads/)
+1. Python 3.7+
+
+   > **_NOTE:_** Since v1.0.0, only Python 3.7+ is supported.
+
+   - For Windows, download latest python version from [here](https://www.python.org/downloads/windows/) and run the installer executable
+   - For Mac and Linux, run `python --version` to see what python version is pre-installed. If you want a different version download from [here](https://www.python.org/downloads/)
 
 2. Package Manager pip
 
-    Note : `pip` comes installed with Python 2.7.9+ and python 3.4+
+   Note : `pip` comes installed with python 3.4+
 
-    - If `pip` is not installed, follow these instructions:
-        - Securely download get-pip.py by following this link: [get-pip.py](https://bootstrap.pypa.io/get-pip.py) or use following cURL command to download it:
+   - If `pip` is not installed, follow these instructions:
 
-        ```sh
-        curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-        ```
+     - Securely download get-pip.py by following this link: [get-pip.py](https://bootstrap.pypa.io/get-pip.py) or use following cURL command to download it:
 
-        - After dowloading, run the file :
+     ```sh
+     curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+     ```
 
-            - For Python 3
+     - After dowloading, run the file :
 
-                ```sh
-                python3 get-pip.py
-                ```
+       - For Python 3
 
-            - For Python 2
-
-                ```sh
-                python2 get-pip.py
-                ```
+         ```sh
+         python3 get-pip.py
+         ```
 
 ### Install the dependencies
 
@@ -42,15 +46,9 @@ To install the dependencies, run the following command in project's base directo
 
 - For Python 3
 
-    ```sh
-    pip3 install -r requirements.txt
-    ```
-
-- For Python 2
-
-    ```sh
-    pip2 install -r requirements.txt
-    ```
+  ```sh
+  pip3 install -r requirements.txt
+  ```
 
 ## Getting Started
 
@@ -71,7 +69,6 @@ curl -u "YOUR_USERNAME:YOUR_ACCESS_KEY" \
 Ensure that @ symbol is prepended to the file path in the above request. Please note the `app_url` value returned in the API response. We will use this to set the application under test while configuring the test later on.
 
 **Note**: If you do not have an .apk or .ipa file and are looking to simply try App Automate, you can download and test using our [sample Android app](https://www.browserstack.com/app-automate/sample-apps/android/WikipediaSample.apk) or [sample iOS app](https://www.browserstack.com/app-automate/sample-apps/ios/BStackSampleApp.ipa).
-
 
 **2. Configure and run your first test**
 
@@ -107,7 +104,6 @@ Ensure that @ symbol is prepended to the file path in the above request. Please 
 
 **Note**: If you do not have an .apk or .ipa file and are looking to simply try App Automate, you can download and test using our [sample Android Local app](https://www.browserstack.com/app-automate/sample-apps/android/LocalSample.apk) or [sample iOS Local app](https://www.browserstack.com/app-automate/sample-apps/ios/LocalSample.ipa).
 
-
 **2. Configure and run your local test**
 
 Open `browserstack_sample_local` file in `Android` or `iOS` folder :
@@ -118,7 +114,7 @@ Open `browserstack_sample_local` file in `Android` or `iOS` folder :
 
 - Set the device and OS version
 
-- Ensure that `browserstack.local` capability is set to `true`. Within the test script, there is code snippet that automatically establishes Local Testing connection to BrowserStack servers using Python binding for BrowserStack Local. 
+- Ensure that `browserstack.local` capability is set to `true`. Within the test script, there is code snippet that automatically establishes Local Testing connection to BrowserStack servers using Python binding for BrowserStack Local.
 
 - If you have uploaded your own app update the test case
 
