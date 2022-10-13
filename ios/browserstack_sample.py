@@ -1,47 +1,49 @@
 from appium import webdriver
-from appium.webdriver.common.mobileby import MobileBy
+from appium.options.ios import XCUITestOptions
+from appium.webdriver.common.appiumby import AppiumBy
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 
-desired_cap = {
-    # Set your access credentials
-    "browserstack.user" : "YOUR_USERNAME",
-    "browserstack.key" : "YOUR_ACCESS_KEY",
-
+# Options are only available since client version 2.3.0
+# If you use an older client then switch to desired_capabilities
+# instead: https://github.com/appium/python-client/pull/720
+options = XCUITestOptions().load_capabilities({
     # Set URL of the application under test
     "app" : "bs://<app-id>",
 
     # Specify device and os_version for testing
-    "device" : "iPhone 11 Pro",
-    "os_version" : "13",
-    
+    "deviceName": "iPhone 11 Pro",
+    "platformName": "ios",
+    "platformVersion": "13",
+
     # Set other BrowserStack capabilities
-    "project" : "First Python project", 
-    "build" : "browserstack-build-1",
-    "name" : "first_test"
-}
+    "bstack:options": {
+        "userName" : "YOUR_USERNAME",
+        "accessKey" : "YOUR_ACCESS_KEY",
+        "projectName" : "First Python project",
+        "buildName" : "browserstack-build-1",
+        "sessionName" : "BStack first_test"
+    }
+})
 
 # Initialize the remote Webdriver using BrowserStack remote URL
-# and desired capabilities defined above
-driver = webdriver.Remote(
-    command_executor="http://hub-cloud.browserstack.com/wd/hub", 
-    desired_capabilities=desired_cap
-)
+# and options defined above
+driver = webdriver.Remote("http://hub.browserstack.com/wd/hub", options=options)
 
-# Test case for the BrowserStack sample Android app. 
+# Test case for the BrowserStack sample iOS app.
 # If you have uploaded your app, update the test case here. 
 text_button = WebDriverWait(driver, 30).until(
-    EC.element_to_be_clickable((MobileBy.ACCESSIBILITY_ID, "Text Button"))
+    EC.element_to_be_clickable((AppiumBy.ACCESSIBILITY_ID, "Text Button"))
 )
 text_button.click()
 text_input = WebDriverWait(driver, 30).until(
-    EC.element_to_be_clickable((MobileBy.ACCESSIBILITY_ID, "Text Input"))
+    EC.element_to_be_clickable((AppiumBy.ACCESSIBILITY_ID, "Text Input"))
 )
 text_input.send_keys("hello@browserstack.com"+"\n")
 time.sleep(5)
 text_output = WebDriverWait(driver, 30).until(
-    EC.element_to_be_clickable((MobileBy.ACCESSIBILITY_ID, "Text Output"))
+    EC.element_to_be_clickable((AppiumBy.ACCESSIBILITY_ID, "Text Output"))
 )
 if text_output!=None and text_output.text=="hello@browserstack.com":
 	assert True
