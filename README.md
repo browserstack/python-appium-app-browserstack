@@ -106,7 +106,7 @@ Open `Android` or `iOS` folder :
 
 - If you have uploaded your own app, update the app in the `browserstack.yml`
 
-- Run `python browserstack_sample_local.py`
+- Run `browserstack-sdk python browserstack_sample_local.py`
 
 - You can access the test execution results, and debugging information such as video recording, network logs on [App Automate dashboard](https://app-automate.browserstack.com/dashboard)
 
