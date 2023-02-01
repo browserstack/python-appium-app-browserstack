@@ -6,51 +6,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from browserstack.local import Local
 import time
 
-# Set your BrowserStack access credentials here
-userName = "YOUR_USERNAME"
-accessKey = "YOUR_ACCESS_KEY"
-
-# Options are only available since client version 2.3.0
-# If you use an older client then switch to desired_capabilities
-# instead: https://github.com/appium/python-client/pull/720
-options = UiAutomator2Options().load_capabilities({
-    # Set URL of the application under test
-    "app" : "bs://<app-id>",
-
-    # Specify device and os_version for testing
-    "deviceName": "Google Pixel 3",
-    "platformName": "android",
-    "platformVersion": "9.0",
-
-    # Set other BrowserStack capabilities
-    "bstack:options": {
-        "userName" : userName,
-        "accessKey" : accessKey,
-        "projectName" : "First Python Local project",
-        "buildName" : "browserstack-build-1",
-        "sessionName" : "BStack local_test",
-        "local" : "true"
-    }
-})
-
-bs_local = None
-
-def start_local():
-    global bs_local
-    bs_local = Local()
-    bs_local_args = { "key": accessKey, "forcelocal": "true" }
-    bs_local.start(**bs_local_args)
-
-def stop_local():
-    global bs_local
-    bs_local.stop()
-
-# Start BrowserStack local binary
-start_local()
-
 # Initialize the remote Webdriver using BrowserStack remote URL
-# and options defined above
-driver = webdriver.Remote("http://hub.browserstack.com/wd/hub", options=options)
+driver = webdriver.Remote("http://hub.browserstack.com/wd/hub")#, options=options)
 
 # Test case for the BrowserStack sample Android app. 
 # If you have uploaded your app, update the test case here. 
@@ -75,5 +32,3 @@ assert(matched_string.__contains__("Up and running"))
 
 # Invoke driver.quit() after the test is done to indicate that the test is completed.
 driver.quit()
-
-stop_local()

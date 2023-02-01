@@ -72,17 +72,11 @@ Ensure that @ symbol is prepended to the file path in the above request. Please 
 
 **2. Configure and run your first test**
 
-Open `browserstack_sample.py` file in `Android` or `iOS` folder :
+Open `Android` or `iOS` folder :
 
-- Replace `YOUR_USERNAME` & `YOUR_ACCESS_KEY` with your BrowserStack access credentials. Get your BrowserStack access credentials from [here](https://www.browserstack.com/accounts/settings)
+- If you have uploaded your own app, update the app in the `browserstack.yml`
 
-- Replace `bs://<app-id>` wkth the URL obtained from app upload step
-
-- Set the device and OS version
-
-- If you have uploaded your own app update the test case
-
-- Run `python browserstack_sample.py`
+- Run `browserstack-sdk python browserstack_sample.py`
 
 - You can access the test execution results, and debugging information such as video recording, network logs on [App Automate dashboard](https://app-automate.browserstack.com/dashboard)
 
@@ -106,17 +100,11 @@ Ensure that @ symbol is prepended to the file path in the above request. Please 
 
 **2. Configure and run your local test**
 
-Open `browserstack_sample_local` file in `Android` or `iOS` folder :
+Open `Android` or `iOS` folder :
 
-- Replace `YOUR_USERNAME` & `YOUR_ACCESS_KEY` with your BrowserStack access credentials. Get your BrowserStack access credentials from [here](https://www.browserstack.com/accounts/settings)
+- Ensure that `local` capability is set to `true` in the `browserstack.yml` file
 
-- Replace `bs://<app-id>` wkth the URL obtained from app upload step
-
-- Set the device and OS version
-
-- Ensure that `local` capability is set to `true`. Within the test script, there is code snippet that automatically establishes Local Testing connection to BrowserStack servers using Python binding for BrowserStack Local.
-
-- If you have uploaded your own app update the test case
+- If you have uploaded your own app, update the app in the `browserstack.yml`
 
 - Run `python browserstack_sample_local.py`
 
