@@ -7,7 +7,7 @@ from browserstack.local import Local
 import time
 
 # Initialize the remote Webdriver using BrowserStack remote URL
-driver = webdriver.Remote("http://hub.browserstack.com/wd/hub")#, options=options)
+driver = webdriver.Remote("http://hub.browserstack.com/wd/hub")
 
 # Test case for the BrowserStack sample Android app. 
 # If you have uploaded your app, update the test case here. 
