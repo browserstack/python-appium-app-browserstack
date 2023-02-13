@@ -5,8 +5,29 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 
+options = UiAutomator2Options().load_capabilities({
+    # Specify device and os_version for testing
+    "platformName" : "android",
+    "platformVersion" : "9.0",
+    "deviceName" : "Google Pixel 3",
+
+    # Set URL of the application under test
+    "app" : "bs://<app-id>",
+
+    # Set other BrowserStack capabilities
+    'bstack:options' : {
+        "projectName" : "BrowserStack Samples",
+        "buildName" : "browserstack build",
+        "sessionName" : "BStack sample python-appium",
+
+        # Set your access credentials
+        "userName" : "YOUR_USERNAME",
+        "accessKey" : "YOUR_ACCESS_KEY"
+    }
+})
+
 # Initialize the remote Webdriver using BrowserStack remote URL
-driver = webdriver.Remote("http://hub.browserstack.com/wd/hub")
+driver = webdriver.Remote("http://localhost:4444/wd/hub", options=options)
 
 # Test case for the BrowserStack sample Android app.
 # If you have uploaded your app, update the test case here.

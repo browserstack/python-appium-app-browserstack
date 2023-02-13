@@ -23,6 +23,8 @@ buildIdentifier: '#${BUILD_NUMBER}' # Supports strings along with either/both ${
 
 source: 'python:appium-sample-sdk:v1.0'
 
+# Set `app` to define the app that is to be used for testing. 
+# It can either take the id of any uploaded app or the path of the app directly.
 app: ./WikipediaSample.apk
 # app: ./LocalSample.apk #For running local tests
 
@@ -52,7 +54,7 @@ platforms:
 # Example 1 - If you have configured 3 platforms and set `parallelsPerPlatform` as 2, a total of 6 (2 * 3) parallel threads will be used on BrowserStack
 #
 # Example 2 - If you have configured 1 platform and set `parallelsPerPlatform` as 5, a total of 5 (1 * 5) parallel threads will be used on BrowserStack
-# parallelsPerPlatform: 1
+parallelsPerPlatform: 1
 
 # ==========================================
 # BrowserStack Local

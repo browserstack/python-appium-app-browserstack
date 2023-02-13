@@ -23,8 +23,10 @@ buildIdentifier: '#${BUILD_NUMBER}' # Supports strings along with either/both ${
 
 source: 'python:appium-sample-sdk:v1.0'
 
-# app: ./BStackSampleApp.ipa
-app: ./LocalSample.ipa #For running local tests
+# Set `app` to define the app that is to be used for testing. 
+# It can either take the id of any uploaded app or the path of the app directly.
+app: ./BStackSampleApp.ipa
+# app: ./LocalSample.ipa #For running local tests
 
 # =======================================
 # Platforms (Browsers / Devices to test)

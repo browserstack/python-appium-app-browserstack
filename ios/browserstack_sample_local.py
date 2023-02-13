@@ -3,11 +3,35 @@ from appium.options.ios import XCUITestOptions
 from appium.webdriver.common.appiumby import AppiumBy
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from browserstack.local import Local
 import os
 
+# Options are only available since client version 2.3.0
+# If you use an older client then switch to desired_capabilities
+# instead: https://github.com/appium/python-client/pull/720
+options = XCUITestOptions().load_capabilities({
+    # Set URL of the application under test
+    "app" : "bs://<app-id>",
+
+    # Specify device and os_version for testing
+    "deviceName": "iPhone XS",
+    "platformName": "ios",
+    "platformVersion": "12",
+
+    # Set other BrowserStack capabilities
+    "bstack:options": {
+        "projectName" : "BrowserStack Samples",
+        "buildName" : "browserstack build",
+        "sessionName" : "BStack local python-appium",
+        "local" : "true",
+
+        # Set your access credentials
+        "userName" : "YOUR_USERNAME",
+        "accessKey" : "YOUR_ACCESS_KEY"
+    }
+})
+
 # Initialize the remote Webdriver using BrowserStack remote URL
-driver = webdriver.Remote("http://hub.browserstack.com/wd/hub")
+driver = webdriver.Remote("http://localhost:4444/wd/hub", options=options)
 
 # Test case for the BrowserStack sample iOS app. 
 # If you have uploaded your app, update the test case here. 
