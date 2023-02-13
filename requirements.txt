@@ -1,3 +1,2 @@
 Appium-Python-Client==2.6.1;python_version >= '3.0'
-browserstack-local==1.2.2
-browserstack-sdk==1.4.0
+browserstack-sdk

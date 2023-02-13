@@ -74,7 +74,7 @@ Ensure that @ symbol is prepended to the file path in the above request. Please 
 
 Open `Android` or `iOS` folder :
 
-- If you have uploaded your own app, update the app in the `browserstack.yml`
+- If you have uploaded your own app, update the app id or directly upload the path to your app in the `browserstack.yml` 
 
 - Run `browserstack-sdk python browserstack_sample.py`
 
@@ -102,9 +102,9 @@ Ensure that @ symbol is prepended to the file path in the above request. Please 
 
 Open `Android` or `iOS` folder :
 
-- Ensure that `local` capability is set to `true` in the `browserstack.yml` file
+- Ensure that `browserstackLocal` capability is set to `true` in the `browserstack.yml` file
 
-- If you have uploaded your own app, update the app in the `browserstack.yml`
+- If you have uploaded your own app, update the app capability with the app id or directly upload the path to your app in the `browserstack.yml` 
 
 - Run `browserstack-sdk python browserstack_sample_local.py`
 
