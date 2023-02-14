@@ -54,23 +54,7 @@ To install the dependencies, run the following command in project's base directo
 
 Getting Started with Appium tests in Python on BrowserStack couldn't be easier!
 
-### Run your first test :
-
-**1. Upload your Android or iOS App**
-
-Upload your Android app (.apk or .aab file) or iOS app (.ipa file) to BrowserStack servers using our REST API. Here is an example cURL request :
-
-```
-curl -u "YOUR_USERNAME:YOUR_ACCESS_KEY" \
--X POST "https://api-cloud.browserstack.com/app-automate/upload" \
--F "file=@/path/to/apk/file"
-```
-
-Ensure that @ symbol is prepended to the file path in the above request. Please note the `app_url` value returned in the API response. We will use this to set the application under test while configuring the test later on.
-
-**Note**: If you do not have an .apk or .ipa file and are looking to simply try App Automate, you can download and test using our [sample Android app](https://www.browserstack.com/app-automate/sample-apps/android/WikipediaSample.apk) or [sample iOS app](https://www.browserstack.com/app-automate/sample-apps/ios/BStackSampleApp.ipa).
-
-**2. Configure and run your first test**
+### **Run your first test :**
 
 Open `Android` or `iOS` folder :
 
@@ -83,22 +67,6 @@ Open `Android` or `iOS` folder :
 ---
 
 ### **Use Local testing for apps that access resources hosted in development or testing environments :**
-
-**1. Upload your Android or iOS App**
-
-Upload your Android app (.apk or .aab file) or iOS app (.ipa file) that access resources hosted on your internal or test environments to BrowserStack servers using our REST API. Here is an example cURL request :
-
-```
-curl -u "YOUR_USERNAME:YOUR_ACCESS_KEY" \
--X POST "https://api-cloud.browserstack.com/app-automate/upload" \
--F "file=@/path/to/apk/file"
-```
-
-Ensure that @ symbol is prepended to the file path in the above request. Please note the `app_url` value returned in the API response. We will use this to set the application under test while configuring the test later on.
-
-**Note**: If you do not have an .apk or .ipa file and are looking to simply try App Automate, you can download and test using our [sample Android Local app](https://www.browserstack.com/app-automate/sample-apps/android/LocalSample.apk) or [sample iOS Local app](https://www.browserstack.com/app-automate/sample-apps/ios/LocalSample.ipa).
-
-**2. Configure and run your local test**
 
 Open `Android` or `iOS` folder :
 
