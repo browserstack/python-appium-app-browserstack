@@ -74,7 +74,7 @@ Ensure that @ symbol is prepended to the file path in the above request. Please 
 
 Open `Android` or `iOS` folder :
 
-- If you have uploaded your own app, update the app id or directly upload the path to your app in the `browserstack.yml` 
+- If you have uploaded your app then add the app id to the `browserstack.yml` config file, or you can directly specify the path to your app in the `browserstack.yml` file.
 
 - Run `browserstack-sdk python browserstack_sample.py`
 

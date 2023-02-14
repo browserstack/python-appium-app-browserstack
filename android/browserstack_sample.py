@@ -10,24 +10,20 @@ options = UiAutomator2Options().load_capabilities({
     "platformName" : "android",
     "platformVersion" : "9.0",
     "deviceName" : "Google Pixel 3",
+    "project" : "BrowserStack Samples",
+    "build" : "browserstack build",
+    "name" : "BStack sample python-appium",
+
+    # Set your access credentials
+    "browserstack.user" : "YOUR_USERNAME",
+    "browserstack.key" : "YOUR_ACCESS_KEY",
 
     # Set URL of the application under test
     "app" : "bs://<app-id>",
-
-    # Set other BrowserStack capabilities
-    'bstack:options' : {
-        "projectName" : "BrowserStack Samples",
-        "buildName" : "browserstack build",
-        "sessionName" : "BStack sample python-appium",
-
-        # Set your access credentials
-        "userName" : "YOUR_USERNAME",
-        "accessKey" : "YOUR_ACCESS_KEY"
-    }
 })
 
 # Initialize the remote Webdriver using BrowserStack remote URL
-driver = webdriver.Remote("http://localhost:4444/wd/hub", options=options)
+driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", options=options)
 
 # Test case for the BrowserStack sample Android app.
 # If you have uploaded your app, update the test case here.
