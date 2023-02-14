@@ -104,7 +104,7 @@ Open `Android` or `iOS` folder :
 
 - Ensure that `browserstackLocal` capability is set to `true` in the `browserstack.yml` file
 
-- If you have uploaded your own app, update the app capability with the app id or directly upload the path to your app in the `browserstack.yml` 
+- If you have uploaded your app then add the app id to the `browserstack.yml` config file, or you can directly specify the path to your app in the `browserstack.yml` file.
 
 - Run `browserstack-sdk python browserstack_sample_local.py`
 
