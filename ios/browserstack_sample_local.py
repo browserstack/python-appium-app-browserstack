@@ -16,22 +16,18 @@ options = XCUITestOptions().load_capabilities({
     "deviceName": "iPhone XS",
     "platformName": "ios",
     "platformVersion": "12",
+    "project" : "BrowserStack Samples",
+    "build" : "browserstack build",
+    "name" : "BStack local python-appium",
+    "browserstack.local" : "true",
 
-    # Set other BrowserStack capabilities
-    "bstack:options": {
-        "projectName" : "BrowserStack Samples",
-        "buildName" : "browserstack build",
-        "sessionName" : "BStack local python-appium",
-        "local" : "true",
-
-        # Set your access credentials
-        "userName" : "YOUR_USERNAME",
-        "accessKey" : "YOUR_ACCESS_KEY"
-    }
+    # Set your access credentials
+    "browserstack.user" : "YOUR_USERNAME",
+    "browserstack.key" : "YOUR_ACCESS_KEY"
 })
 
 # Initialize the remote Webdriver using BrowserStack remote URL
-driver = webdriver.Remote("http://localhost:4444/wd/hub", options=options)
+driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", options=options)
 
 # Test case for the BrowserStack sample iOS app. 
 # If you have uploaded your app, update the test case here. 
