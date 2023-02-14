@@ -9,24 +9,14 @@ import time
 # If you use an older client then switch to desired_capabilities
 # instead: https://github.com/appium/python-client/pull/720
 options = UiAutomator2Options().load_capabilities({
-    # Set URL of the application under test
-    "app" : "bs://<app-id>",
-
     # Specify device and os_version for testing
     "deviceName": "Google Pixel 3",
     "platformName": "android",
     "platformVersion": "9.0",
-    "project" : "BrowserStack Samples",
-    "build" : "browserstack build",
-    "name" : "BStack local python-appium",
-    "browserstack.local" : "true",
 
-    # Set your access credentials
-    "browserstack.user" : "YOUR_USERNAME",
-    "browserstack.key" : "YOUR_ACCESS_KEY"
+    # Add your caps here
 })
 
-# Initialize the remote Webdriver using BrowserStack remote URL
 driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", options=options)
 
 # Test case for the BrowserStack sample Android app. 

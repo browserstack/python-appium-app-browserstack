@@ -5,24 +5,18 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 
+# Options are only available since client version 2.3.0
+# If you use an older client then switch to desired_capabilities
+# instead: https://github.com/appium/python-client/pull/720
 options = UiAutomator2Options().load_capabilities({
     # Specify device and os_version for testing
     "platformName" : "android",
     "platformVersion" : "9.0",
-    "deviceName" : "Google Pixel 3",
-    "project" : "BrowserStack Samples",
-    "build" : "browserstack build",
-    "name" : "BStack sample python-appium",
+    "deviceName" : "Google Pixel 3"
 
-    # Set your access credentials
-    "browserstack.user" : "YOUR_USERNAME",
-    "browserstack.key" : "YOUR_ACCESS_KEY",
-
-    # Set URL of the application under test
-    "app" : "bs://<app-id>",
+    # Add your caps here
 })
 
-# Initialize the remote Webdriver using BrowserStack remote URL
 driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", options=options)
 
 # Test case for the BrowserStack sample Android app.
