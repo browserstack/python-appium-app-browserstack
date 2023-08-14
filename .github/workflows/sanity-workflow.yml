@@ -58,22 +58,22 @@ jobs:
       - name: run tests in parallel on android
         run: |
           cd android
-          browserstack-sdk python -s browserstack_sample.py
+          browserstack-sdk python browserstack_sample.py
       
       - name: run local tests in parallel on android
         run: |
           cd android
-          browserstack-sdk python -s browserstack_sample_local.py --browserstack.app "./LocalSample.apk"
+          browserstack-sdk python browserstack_sample_local.py --browserstack.app "./LocalSample.apk"
       
       - name: run tests in parallel on ios
         run: |
           cd ios
-          browserstack-sdk python -s browserstack_sample.py
+          browserstack-sdk python browserstack_sample.py
 
       - name: run local tests in parallel on ios
         run: |
           cd ios
-          browserstack-sdk python -s browserstack_sample_local.py --browserstack.app "./LocalSample.ipa"
+          browserstack-sdk python browserstack_sample_local.py --browserstack.app "./LocalSample.ipa"
 
       - if: always()
         uses: actions/github-script@98814c53be79b1d30f795b907e553d8679345975
