@@ -1,0 +1,8 @@
+[bstack_utils11]
+browserstack_utils = bstack_utils
+
+[console_scripts]
+browserstack-sdk = browserstack_sdk.__init__:run_on_browserstack
+
+[pytest11]
+myplugin = pytest_browserstackplugin.plugin

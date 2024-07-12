@@ -1,0 +1,3 @@
+browserstack_sdk
+bstack_utils
+pytest_browserstackplugin

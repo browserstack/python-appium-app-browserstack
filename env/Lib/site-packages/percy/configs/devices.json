@@ -1,0 +1,232 @@
+{
+   "iphone 12 pro max": {
+      "scale_factor": "3",
+      "status_bar": "47"
+   },
+   "iphone 12 pro": {
+      "scale_factor": "3",
+      "status_bar": "47"
+   },
+   "iphone 12 mini": {
+      "scale_factor": "3",
+      "status_bar": "50"
+   },
+   "iphone 12": {
+      "scale_factor": "3",
+      "status_bar": "47"
+   },
+   "iphone 11 pro max": {
+      "scale_factor": "3",
+      "status_bar": "44"
+   },
+   "iphone 11 pro": {
+      "scale_factor": "3",
+      "status_bar": "44"
+   },
+   "iphone 11": {
+      "scale_factor": "2",
+      "status_bar": "48"
+   },
+   "iphone xs": {
+      "scale_factor": "3",
+      "status_bar": "44"
+   },
+   "iphone xs max": {
+      "scale_factor": "3",
+      "status_bar": "44"
+   },
+   "iphone xr": {
+      "scale_factor": "2",
+      "status_bar": "48"
+   },
+   "iphone x": {
+      "scale_factor": "3",
+      "status_bar": "44"
+   },
+   "iphone 8": {
+      "scale_factor": "2",
+      "status_bar": "20"
+   },
+   "iphone 8 plus": {
+      "scale_factor": "3",
+      "status_bar": "20"
+   },
+   "iphone 7": {
+      "scale_factor": "2",
+      "status_bar": "20"
+   },
+   "iphone 6s": {
+      "scale_factor": "2",
+      "status_bar": "20"
+   },
+   "iphone 6 plus": {
+      "scale_factor": "3",
+      "status_bar": "20"
+   },
+   "iphone 6s plus": {
+      "scale_factor": "3",
+      "status_bar": "20"
+   },
+   "iphone 6": {
+      "scale_factor": "2",
+      "status_bar": "20"
+   },
+   "iphone se 2022": {
+      "scale_factor": "2",
+      "status_bar": "20"
+   },
+   "iphone se 2020": {
+      "scale_factor": "2",
+      "status_bar": "20"
+   },
+   "iphone se": {
+      "scale_factor": "2",
+      "status_bar": "20"
+   },
+   "ipad air 4": {
+      "scale_factor": "2",
+      "status_bar": "24"
+   },
+   "ipad 9th": {
+      "scale_factor": "2",
+      "status_bar": "20"
+   },
+   "ipad 10th": {
+      "scale_factor": "2",
+      "status_bar": "24"
+   },
+   "ipad air 5": {
+      "scale_factor": "2",
+      "status_bar": "24"
+   },
+   "ipad pro 12.9 2022": {
+      "scale_factor": "2",
+      "status_bar": "24"
+   },
+   "ipad pro 12.9 2021": {
+      "scale_factor": "2",
+      "status_bar": "24"
+   },
+   "ipad pro 12.9 2020": {
+      "scale_factor": "2",
+      "status_bar": "24"
+   },
+   "ipad pro 11 2021": {
+      "scale_factor": "2",
+      "status_bar": "24"
+   },
+   "ipad pro 11 2022": {
+      "scale_factor": "2",
+      "status_bar": "24"
+   },
+   "ipad 8th": {
+      "scale_factor": "2",
+      "status_bar": "20"
+   },
+   "ipad pro 12.9 2018": {
+      "scale_factor": "2",
+      "status_bar": "24"
+   },
+   "ipad mini 2021": {
+      "scale_factor": "2",
+      "status_bar": "24"
+   },
+   "ipad pro 11 2020": {
+      "scale_factor": "2",
+      "status_bar": "24"
+   },
+   "ipad mini 2019": {
+      "scale_factor": "2",
+      "status_bar": "20"
+   },
+   "ipad air 2019": {
+      "scale_factor": "2",
+      "status_bar": "20"
+   },
+   "ipad 7th": {
+      "scale_factor": "2",
+      "status_bar": "20"
+   },
+   "ipad pro 11 2018": {
+      "scale_factor": "2",
+      "status_bar": "24"
+   },
+   "ipad pro 9.7 2016": {
+      "scale_factor": "2",
+      "status_bar": "20"
+   },
+   "ipad pro 12.9": {
+      "scale_factor": "2",
+      "status_bar": "20"
+   },
+   "ipad mini 4": {
+      "scale_factor": "2",
+      "status_bar": "20"
+   },
+   "ipad 6th": {
+      "scale_factor": "2",
+      "status_bar": "20"
+   },
+   "ipad 5th": {
+      "scale_factor": "2",
+      "status_bar": "20"
+   },
+   "google pixel 6 pro": {
+      "12": {
+         "status_bar": "143",
+         "nav_bar": "56"
+      },
+      "13": {
+         "status_bar": "130",
+         "nav_bar": "84"
+      }
+   },
+   "samsung galaxy s22 plus": {
+      "12": {
+         "status_bar": "74",
+         "nav_bar": "135"
+      }
+   },
+   "samsung galaxy s21": {
+      "12": {
+         "status_bar": "80",
+         "nav_bar": "144"
+      }
+   },
+   "samsung galaxy s22 ultra": {
+      "12": {
+         "status_bar": "75",
+         "nav_bar": "135"
+      }
+   },
+   "samsung galaxy s22": {
+      "12": {
+         "status_bar": "81",
+         "nav_bar": "144"
+      }
+   },
+   "samsung galaxy tab s8": {
+      "12": {
+         "status_bar": "51",
+         "nav_bar": "102"
+      }
+   },
+   "google pixel 5": {
+      "12": {
+         "status_bar": "145",
+         "nav_bar": "44"
+      }
+   },
+   "google pixel 6": {
+      "12": {
+         "status_bar": "124",
+         "nav_bar": "42"
+      }
+   },
+   "google pixel 7": {
+      "13": {
+         "status_bar": "118",
+         "nav_bar": "63"
+      }
+   }
+}

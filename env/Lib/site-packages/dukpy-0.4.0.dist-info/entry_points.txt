@@ -1,0 +1,3 @@
+[console_scripts]
+dukpy = dukpy.run:main
+dukpy-install = dukpy.install:main
