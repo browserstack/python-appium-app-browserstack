@@ -1,7 +1,7 @@
 userName: dheerajsurakasul_98ku2q
 accessKey: gEYY1vefyyYAENWGCYMc
 framework: python
-app: bs://a0feae4587be1e0ebf6130673d56106d403ea8e7
+app: bs://cb2ab40efd24469e530cd0607f8b0a5b191bff30
 platforms:
   - platformName: android
     deviceName: Google Pixel 5
