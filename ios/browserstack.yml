@@ -41,7 +41,7 @@ platforms:
   - deviceName: iPhone 13 Pro
     osVersion: 15
     platformName: ios
-  - deviceName: iPhone 12 Pro
+  - deviceName: iPhone 12
     osVersion: 17
     platformName: ios
 
