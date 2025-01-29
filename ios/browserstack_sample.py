@@ -10,7 +10,7 @@ import time
 # instead: https://github.com/appium/python-client/pull/720
 options = XCUITestOptions().load_capabilities({
     # Specify device and os_version for testing
-    "deviceName": "iPhone 11 Pro",
+    "deviceName": "iPhone 11",
     "platformName": "ios",
     "platformVersion": "13",
 
