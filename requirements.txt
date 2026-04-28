@@ -1,2 +1,2 @@
-browserstack-sdk
+browserstack-sdk @ https://sdk-assets.browserstack.com/python/browserstack_sdk-latest.tar.gz
 Appium-Python-Client==2.6.1;python_version >= '3.0'
